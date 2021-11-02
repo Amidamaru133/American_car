@@ -4,6 +4,75 @@
   box-sizing: border-box ;
 }
 
+/* Модальный (фон) */
+.modal {
+  display: none; /* Скрыто по умолчанию */
+  position: absolute; /* Оставаться на месте */
+  z-index: 1; /* Сидеть на вершине */
+  transform: translateX(-50%);
+  left: 50%;
+  margin-top: 47px;
+
+
+  
+  
+  
+}
+
+/* Модальное содержание/коробка */
+.modal-content {
+  background-color: #fefefe;
+   /* 15% сверху и по центру */
+  padding: 8px;
+  border: 1px solid #888;
+  /* Может быть больше или меньше, в зависимости от размера экрана */
+}
+
+.modal-body{
+  color: #2C2B2B;
+}
+
+/* Кнопка закрытия */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-footer{
+  margin-top: 15px;
+  /* display: flex;
+  justify-content: space-between; */
+}
+.modal__footer-link{
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  padding: 7px 27px 7px;
+  background-color: #5A0D67;
+  text-transform: uppercase;
+  color:#fff;
+  border: 2px solid transparent;
+}
+
+.modal__footer-link:hover{
+  background-color: #fff;
+  color:#5A0D67;
+  margin-top: -7px;
+  
+  border: 2px solid #5A0D67;
+}
+
+
+
 body{
   font-family:'Oswald', sans-serif;
   font-size: 18px;
@@ -15,6 +84,7 @@ body{
 a{
   text-decoration: none;
   color:inherit;
+  
 }
 
 .container{
@@ -156,8 +226,23 @@ a{
 .services__content-text {
 }
 
+#btnMore{
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: #5A0D67;
+  background-color: transparent;
+  cursor: pointer;
+  text-decoration: underline;
+
+}
+
 .button {
 }
+ .services__content-text--more{
+   display: none;
+ }
+
 .button--decor {
   margin-top: -7px;
   color:#fff;

@@ -16,13 +16,33 @@
 </head>
 
 <body>
+  
+
 
   <header class="header">
+    <div id="myModal" class="modal">
+
+      <!-- Модальное содержание -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+      </div>
+      <div class="modal-body">
+        <p>Хотите выбрать регион?</p>
+      </div>
+      <div class="modal-footer">
+        <button href="#" class="modal__footer-link modal__footer-link--y">Да</button>
+        <button href="#" class="modal__footer-link modal__footer-link--n">Нет</button>
+      </div>
+    </div>
+    
+    </div>
     <div class="container">
       <div class="header__top">
         <a class="logo href=" #"">
           <img class="logo__img" src="images/logo.svg" alt="logo">
         </a>
+        
         <a class="phone" href="tel:+380505556677">+38 (050) 555 66 77</a>
       </div>
       <div class="header__content">
@@ -70,12 +90,14 @@
             </h6>
             <div class="services__content-textbox">
               <p class="services__content-text">
-                Мы сравнили рынки США с Европейскими и поняли, что покупка автомобиля в Америке выгоднее в несколько раз, как бы парадоксально это не звучало. Это вызвано продуманной логистикой, уровнем развития сервисов по оцениванию состояния авто и самим процессом покупки автомобиля.
-              </p>
-              <p class="services__content-text">
+                Мы сравнили рынки США с Европейскими и поняли, что покупка автомобиля в Америке выгоднее в несколько раз, как бы парадоксально это не звучало<span id="dots">...</span>
+                <span class="services__content-text--more">.Это вызвано продуманной логистикой, уровнем развития сервисов по оцениванию состояния авто и самим процессом покупки автомобиля<br>
                 Большинство граждан США берут автомобиль в лизинг на несколько лет и все время эксплуатации сама лизинговая компания занимается постоянным ТО автомобиля, вследствие чего, машины из США – один из лучших выборов для автолюбителей Украины.
+              </span></p>
+            
 
-              </p>
+              <button  onclick="ShowMore()" id = "btnMore">Читать полностью</button>
+
             </div>
           </div> 
           <div class="services__content-box">
