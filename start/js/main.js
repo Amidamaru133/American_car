@@ -43,3 +43,15 @@ document.addEventListener('click', function(event) {
   
   if (!modal.contains(event.target)) modal.style.display='none';
 });
+
+$(function(){
+
+  $('.slider__inner').slick({
+    arrows: false,
+    dots: true,
+    slidesToShow: 3,
+    slidesToScroll: 1
+
+  });
+
+});
