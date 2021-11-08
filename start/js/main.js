@@ -58,7 +58,23 @@ $(function () {
     arrows: false,
     dots: true,
     slidesToShow: 3,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    responsive :[
+      {
+        breakpoint: 681,
+        settings:{
+          slidesToShow:2
+
+        }
+      },
+      {
+        breakpoint: 501,
+        settings:{
+          slidesToShow:1
+
+        }
+      },
+    ]
 
   });
 
